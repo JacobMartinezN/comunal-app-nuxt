@@ -7,6 +7,7 @@
             <h2>{{ problem.problem_type.name }}</h2>
             <h3>Hoy | 02:00 PM</h3>
             <h3>{{ problem.location.name }} | {{ problem.location_space.name }}</h3>
+            <hr>
             <div class="problem-state">
               <img src="" alt="">
               <h3>{{ problem.problem_state.name }}</h3>
@@ -67,6 +68,13 @@ export default {
       padding: 20px 30px;
     }
 
+    .problem-item h2 {
+      margin-bottom: 5px;
+    }
+    .problem-item h3 {
+      color: grey;
+    }
+
     .problems-detail {
       flex-grow: 6;
     }
@@ -74,5 +82,9 @@ export default {
     .problem-state {
       display: flex;
       justify-content: space-between;
+    }
+
+    hr {
+      margin: 10px 0;
     }
 </style>
